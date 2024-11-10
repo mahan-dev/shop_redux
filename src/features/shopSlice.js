@@ -90,7 +90,7 @@ const shopSlice = createSlice({
                 state.total = 0;
                 state.itemsCounter = 0;
                 state.checkout = true;
-                // saveToLocalStorage(state)
+                saveToLocalStorage(state)
         }
     },
     extraReducers: (builder) => {

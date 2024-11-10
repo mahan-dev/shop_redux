@@ -22,6 +22,7 @@ const ProductDetails = (data) => {
     const { title, image, description, category } = products;
     console.log(product)
     return (
+        
         <section className='w-full  flex flex-col items-center px-5' >
             <section className='flex p-6 rounded-lg mt-[5rem] gap-4  flex-col items-center w-fit ' style={{ boxShadow: "rgba(0,0,0,0.1) 0px 4px 12px " }}>
 

@@ -33,7 +33,7 @@ const Home = () => {
     return (
         <section className={`${styles.homeWrapper} w-full my-6 flex flex-col gap-6 justify-center  px-6`}>
             <Header />
-            <section className='flex gap-4'>
+            <section className='flex gap-4 justify-end'>
 
 
 
@@ -51,6 +51,7 @@ const Home = () => {
                     <section className={`${activeList ? styles.active_aside_content : styles.aside_content}`}>
                         <section>
 
+                            <p className='cursor-pointer' onClick={() => { setSearch(["all"]), setActiveList(false) }}>all</p>
                             <p className='cursor-pointer' onClick={() => { setSearch(["electronics"]), setActiveList(false) }}>electronics</p>
                             <p className='cursor-pointer' onClick={() => { setSearch(["women's clothing", "men's clothing"]), setActiveList(false) }} >clothing</p>
                         </section>
