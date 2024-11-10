@@ -1,0 +1,36 @@
+
+.shoCardContainer {
+    display: flex;  
+    gap: 1rem;
+} 
+
+.contentImageContainer_image{
+    margin: 0 auto;
+}
+@media only screen and (max-width:768px)  {
+    .shoCardContainer{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:576px)  {
+    .shoCardContainer{
+        flex-wrap: wrap;
+    }
+
+    .contentImageContainer{
+        flex-direction: column;
+    }
+    .contentTitleButton{
+        order: 1;
+    }
+}
+
+.checkOut:hover{
+    background-color: #c9c9c9;
+    color: #ffffff;
+    transition: 0.6s ease-in background-color,color ;
+    -webkit-transition: 0.6s ease-in background-color,color ;
+    -moz-transition: 0.6s ease-in background-color,color ;
+    -ms-transition: 0.6s ease-in background-color,color ;
+    -o-transition: 0.6s ease-in background-color,color ;
+}
